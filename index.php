@@ -20,6 +20,16 @@
                 </li>
             </ul>
         </div>
+
+        <div id="test commit">
+            <ul>
+                <li>
+                    <a href="#">Je viens d'effectuer une modification du fichier Index.php après avoir FORK le git de Illias.</a>
+                </li>
+            </ul>
+        </div>
+
+        
     </div>
     <div id="slide"></div>
     <div id="container">

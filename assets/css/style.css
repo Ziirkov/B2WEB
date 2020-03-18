@@ -1,6 +1,6 @@
 body{
     margin: 1px;
-    padding: 0;
+    padding: 1px;
     display: flex;
     flex-wrap: nowrap;
 }

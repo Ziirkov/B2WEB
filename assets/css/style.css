@@ -1,0 +1,160 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+}
+<!-- /*Navbar START*/ -->
+#navbar{
+    position: fixed;
+    top: 0;
+    left:0;
+    height: 8vh;
+    width: 100vw;
+    background-color: #1a1a1d;
+    display: flex;
+    flex-direction: row;
+    z-index: 7;
+}
+#logo_nav{
+    width:40%;
+    display: flex;
+}
+#items{
+    width:60%;
+    display:inline-flex;
+}
+#items ul{
+    width:100%;
+}
+li{
+    list-style: none;
+}
+<!-- /*Navbar END*/ -->
+
+
+
+
+<!-- /*Container Start*/ -->
+
+#container{
+    width:100vw;
+    height:92vh;
+    margin: 8vh 0 0 3vw;
+}
+.container{
+    width:97%;
+    height:100vh;
+    display: flex;
+    background-color:#1a1a1d;
+    margin: 0 8vh 0 3vw;
+    z-index: 5;
+    overflow: hidden;
+}
+#container_light{
+    width:90vw;
+    height:100vh;
+    display: flex;
+    background-color: #3a403c;
+    padding: 0 0 0 10vw;
+    z-index: 5;
+}
+
+#slide{
+    width:0;
+    height:100vh;
+    display: flex;
+    background-color: #327fa8;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 6;
+    transition: width ease-in-out 0.5s;
+}
+.visible{
+    width:100%!important;
+}
+
+<!-- /*Container END*/ -->
+
+<!-- /*Background Index*/ -->
+.svg1 {
+    position: absolute;
+    left: 0;
+    object-fit: contain;
+    z-index: 4;
+    transition: all linear 0.2s;
+}
+.svg2{
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    z-index:4;
+    transition: all linear 0.2s;
+}
+.polygon-bg{
+    transition: background-color linear 0.1s, z-index linear 0.1s;
+}
+.fill-red{
+    fill:red!important;
+}
+.raise{
+    z-index: 5;
+}
+<!-- /*Text Index*/ -->
+.text_index{
+    z-index: 6;
+    position: absolute;
+    top: 0;
+    left: 2%;
+}
+
+<!--/* Gallery */-->
+#galerie{
+    display: flex;
+    font-size: 0;
+    flex-wrap: wrap;
+    margin: -10px 0 0 -10px;
+}
+#gallerie>div{
+    display: inline-block;
+    background: #8a8a8a;
+    margin: 10px 0 0 10px;
+    flex-grow: 1;
+}
+.img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30%;
+    height: 30vh;
+    margin: 1%;
+
+}
+
+#showPhoto{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90vw;
+    height: 70vh;
+    background-color: rgba(0, 0, 0, 0.79);
+    justify-content: center;
+    padding: 15vh 5vw;
+    opacity: 0;
+    visibility: hidden;
+}
+ #showPhoto>div{
+     max-height: 90%;
+     background-color:#f1f1f1;
+     height: 50%;
+ }
+ .visibleM{
+     opacity: 1!important;
+     visibility: visible!important;
+ }
